@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>Akromega - Soluciones para sus necesidades</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  		<header>
+		<ul>
+			<li><%= link_to "Inicio", controller: "main", action: "index" %></li>
+			<li><%= link_to "Quienes Somos", controller: "main", action: "quienes_somos" %></li>
+			<li><%= link_to "Servicios", controller: "main", action: "servicios" %></li>
+			<li><%= link_to "Productos", controller: "main", action: "productos"%></li>
+			<li><%= link_to "Contactos", controller: "main", action: "contacto" %></li>
+			<li><%= link_to "Cotizaciones", controller: "main", action: "cotizaciones" %></li>
+		</ul>
+	</header>
+	<div class="principal">
+	</div>
+	<%= yield %>
+    <hr>
+	<footer>
+		<%= image_tag "imagen1.jpg"%><%= image_tag "imagen1.jpg"%><%= image_tag "imagen1.jpg"%><%= image_tag "imagen1.jpg"%><address>Av. 12 de octubre N21-169 y Vicente Ramón Roca.</address><%= image_tag "imagen1.jpg"%><address>Teléfonos: (02) 256-2985 / (02) 252-3025 / 098-689-6729</address><%= image_tag "imagen1.jpg"%><address>Email: info@akromega.com.ec / akromega@hotmail.com
+</address>
+	</footer>
+  </body>
+</html>
