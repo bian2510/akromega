@@ -10,23 +10,38 @@
   </head>
 
   <body>
+  	<div class="contenedorPrincipal">
   		<header>
-		<ul>
+  		<%=link_to controller: "main", action: "index" do %>
+  		<%=image_tag "LOGO_AKROMEGA.png", class: "logo"%>
+  		<%end%>
+		<ul class="menu">
 			<li><%= link_to "Inicio", controller: "main", action: "index" %></li>
-			<li><%= link_to "Quienes Somos", controller: "main", action: "quienes_somos" %></li>
+			<li><%= link_to "Quiénes Somos", controller: "main", action: "quienes_somos" %></li>
 			<li><%= link_to "Servicios", controller: "main", action: "servicios" %></li>
 			<li><%= link_to "Productos", controller: "main", action: "productos"%></li>
 			<li><%= link_to "Contactos", controller: "main", action: "contacto" %></li>
 			<li><%= link_to "Cotizaciones", controller: "main", action: "cotizaciones" %></li>
 		</ul>
 	</header>
-	<div class="principal">
-	</div>
+	<div class="contenido">
 	<%= yield %>
+	</div>
     <hr>
+    </div>
 	<footer>
-		<%= image_tag "imagen1.jpg"%><%= image_tag "imagen1.jpg"%><%= image_tag "imagen1.jpg"%><%= image_tag "imagen1.jpg"%><address>Av. 12 de octubre N21-169 y Vicente Ramón Roca.</address><%= image_tag "imagen1.jpg"%><address>Teléfonos: (02) 256-2985 / (02) 252-3025 / 098-689-6729</address><%= image_tag "imagen1.jpg"%><address>Email: info@akromega.com.ec / akromega@hotmail.com
-</address>
+		<center><address><%=link_to "http://www.google.com.ar" do %>
+			<%= image_tag "facebook.png"%>
+			<%end%>
+			<%=link_to "http://www.google.com.ar" do %>
+			<%= image_tag "twitter.png"%>
+			<%end%>
+			<%=link_to "http://www.google.com.ar" do %>
+			<%= image_tag "whatsapp.png"%>
+			<%end%>
+			<%= image_tag "imagen1.jpg"%>Av. 12 de octubre N21-169 y Vicente Ramón Roca.<%= image_tag "imagen1.jpg"%>Teléfonos: (02) 256-2985 / (02) 252-3025 / 098-689-6729<%= image_tag "imagen1.jpg"%><br>Email: info@akromega.com.ec / akromega@hotmail.com
+</address></center>
 	</footer>
+
   </body>
 </html>
