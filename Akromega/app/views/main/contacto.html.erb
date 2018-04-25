@@ -1,5 +1,7 @@
 <%=form_tag('/main/send_mail') do%>
-<%= label_tag(:q, "Search for:") %>
-  <%= text_field_tag(:q) %>
-  <%= submit_tag("Search") %>
+<%= label_tag(:nombre, "Nombre:") %>
+  <%= text_field_tag(:nombre) %>
+  <%= label_tag(:apellido, "Apellido:") %>
+  <%= text_field_tag(:apellido) %>
+  <%= submit_tag("Enviar") %>
 <% end %>

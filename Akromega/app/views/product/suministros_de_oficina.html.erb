@@ -1,4 +1,8 @@
+<h2>Suministros de oficina</h2>
 <% @products.each do |products| %>
-<p><%=image_tag products.image%></p>
-<p><%= products.title %></p>
+<div class="caja_productos">
+<p><%=image_tag products.image, class:"prueba"%></p><br>
+<p class="titulo"><%= products.title %></p>
+<br>
+</div>
 <%end%>
