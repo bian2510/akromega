@@ -1,6 +1,6 @@
 <div class="contacto">
 	<div class="formulario">
-	<%=form_tag do%>
+	<%=form_tag(:method => "post") do%>
 	<h2>Contacto</h2>
 	<br>
 	<section>
@@ -13,7 +13,7 @@
 	<%= label_tag :telefono, "Teléfono:" %>
 	<%= text_field_tag :telefono %>
 	<%= label_tag :comentarios, "Comentarios:" %>
-	<%= text_area_tag :comentarios %>
+	<%= text_area_tag :comentarios%>
 	<br>
 	<%= submit_tag "Enviar" %>
 	</section>

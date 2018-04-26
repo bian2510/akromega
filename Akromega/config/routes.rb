@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     		get :servicios
     		get :productos
     		get :contacto
+        post :contacto
     		get :cotizaciones
         post :send_mail
   		end

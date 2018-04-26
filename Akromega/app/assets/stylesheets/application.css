@@ -89,6 +89,7 @@ address {
 	display: block;
 	margin: auto;
 	width: 50%;
+	min-width: 185px;
 }
 
 .logo {
@@ -135,7 +136,7 @@ h3 {
 .caja_productos {
 	display: inline-block;
 	max-width: 348px;
-	min-width: 200px;
+	min-width: 185px;
 }
 
 .titulo {

@@ -4,9 +4,10 @@ class MainController < ApplicationController
 	def show
 	end
 	def contacto
+		@nombre = params[:nombre]
+		@apellido = params[:apellido]	
 	end
-	def send_mail
-		mailer = UserMailer.new
-		mailer.send_mail.deliver_later
+	def create
+		MailerMailer.with({nombre: @nombre,apellido: @apellido}).prueba.deliver_later
 	end
 end
