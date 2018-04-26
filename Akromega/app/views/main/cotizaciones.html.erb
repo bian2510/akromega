@@ -1,6 +1,6 @@
 	<div class="formularioCotizaciones	">
-	<%=form_tag do%>
-	<h2>Contacto</h2>
+	<%= form_tag do%>
+	<h2>Cotizaciones</h2>
 	<br>
 	<section>
 	<%= label_tag :nombre, "Nombre:" %>
@@ -22,7 +22,7 @@
 	<%= label_tag :comentarios, "Comentarios:" %>
 	<%= text_area_tag :comentarios %>
 	<br>
-	<%= file_field_tag "Archivo"%>
+	<%= file_field_tag :archivo%>
 	<br>
 	<%= submit_tag "Enviar" %>
 	</section>

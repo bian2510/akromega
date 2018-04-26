@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     		get :contacto
         post :contacto
     		get :cotizaciones
-        post :send_mail
+        post :cotizaciones
   		end
 	end
   resources :product do
